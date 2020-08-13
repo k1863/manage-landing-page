@@ -1,0 +1,307 @@
+:root {
+  /********Primary*/
+  --BrightRed: hsl(12, 88%, 59%);
+  --DarkBlue: hsl(228, 39%, 23%);
+
+  /********Neutral*/
+  --DarkGrayishBlue: hsl(227, 12%, 61%);
+  --VeryDarkBlue: hsl(233, 12%, 13%);
+  --VeryPaleRed: #ffefeb;
+  --VeryLightGray: hsl(0, 0%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  width: 100%;
+  font-family: "Be Vietnam", sans-serif;
+  background-image: url("/images/pale-red-background.svg");
+  background-repeat: no-repeat;
+  background-position: 800px -150px;
+  background-size: 55%;
+}
+
+.main-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.logo-box {
+  cursor: pointer;
+}
+
+.header {
+  font-size: 1rem;
+  width: 100%;
+  margin: 5rem 10rem 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+.menu-items {
+  font-weight: 700;
+}
+
+.menu-item {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 2rem;
+  cursor: pointer;
+  color: var(--DarkBlue);
+}
+
+.menu-item:hover {
+  color: var(--DarkGrayishBlue);
+}
+
+.btn {
+  width: 10rem;
+  height: 3rem;
+  background-color: var(--BrightRed);
+  outline: none;
+  border: none;
+  border-radius: 3rem;
+  color: var(--VeryLightGray);
+  text-transform: capitalize;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.btn:hover {
+  filter: brightness(150%);
+}
+
+.call-to-action {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.call-to-action-head {
+  font-size: 3.5rem;
+  line-height: 4rem;
+  color: var(--DarkBlue);
+  margin-bottom: 2rem;
+  letter-spacing: -0.1rem;
+  line-height: 1.2;
+}
+
+.call-to-action-sub {
+  font-size: 1rem;
+  color: var(--DarkGrayishBlue);
+}
+
+.cta-btn {
+  display: block;
+  margin-top: 2rem;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about-us-head--header {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  color: var(--DarkBlue);
+  margin-bottom: 2rem;
+  letter-spacing: -0.1rem;
+}
+
+.about-us-head--sub {
+  font-size: 1rem;
+  color: var(--DarkGrayishBlue);
+}
+
+.about-btn {
+  position: absolute;
+  transform: translateX(-7rem);
+  width: 4rem;
+  height: 2.5rem;
+  background-color: var(--BrightRed);
+  outline: none;
+  border: none;
+  border-radius: 3rem;
+  color: var(--VeryLightGray);
+  text-transform: capitalize;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.about-progress {
+  color: var(--DarkBlue);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  display: inline-block;
+}
+
+.about-progress--text {
+  color: var(--DarkGrayishBlue);
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 2.5rem;
+}
+
+#testimonial-cont{
+position: relative;
+overflow: visible;
+}
+
+#testimonial-cont::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+width: 205%;
+height: 155%;
+  top: -70%;
+  left: -26%;
+     background-image: url("/images/pale-red-background2.svg");
+  background-repeat: no-repeat;
+}
+
+.testimonials-container {
+  width: 100%;
+  text-align: center;
+  margin: 5rem 0;
+
+}
+
+.testimonials-header {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  color: var(--DarkBlue);
+  margin-bottom: 6rem;
+  letter-spacing: -0.1rem;
+}
+
+.testimonials-cards--box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.testimonial-card {
+  background-color: var(--VeryLightGray);
+  padding: 1rem 5rem;
+  width: 30rem;
+}
+
+.client-img {
+  width: 4rem;
+  margin-top: -2rem;
+}
+
+.client-name {
+  margin: 0.5rem 0;
+  color: var(--DarkBlue);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.client-testimonial {
+  color: var(--DarkGrayishBlue);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.simplify-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10rem;
+  padding: 0 10%;
+  height: 15rem;
+  background: url("/images/bg-simplify-section-desktop.svg"), no-repeat,
+    var(--BrightRed);
+}
+
+.simplify-header {
+  color: var(--VeryLightGray);
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.btn-simplify {
+  background-color: var(--VeryLightGray);
+  color: var(--DarkBlue);
+}
+
+.btn-simplify:hover {
+  background-color: var(--BrightRed);
+  color: var(--VeryLightGray);
+}
+
+.footer {
+  background-color: var(--VeryDarkBlue);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 15rem;
+  padding: 5rem 10%;
+}
+
+.socials {
+  display: inline-block;
+  margin-top: 3.5rem;
+}
+
+.social-icon {
+  margin-left: 0.5rem;
+}
+
+.footer-menu ul li {
+  list-style-type: none;
+  margin-bottom: 0.5rem;
+  color: var(--VeryLightGray);
+  font-size: 1rem;
+}
+
+.other-links ul li {
+  list-style-type: none;
+  margin-bottom: 0.5rem;
+  color: var(--VeryLightGray);
+  font-size: 1rem;
+}
+
+.update-input {
+  color: var(--DarkGrayishBlue);
+  font-weight: 500;
+  padding: 0.6rem;
+  border-radius: 1.3rem;
+  outline: none;
+  border: none;
+  height: 2.5rem;
+}
+
+.update-btn {
+  width: 4rem;
+  height: 2.5rem;
+  margin-left: 0.5rem;
+}
+
+.footer-copyright {
+  color: var(--VeryLightGray);
+  display: block;
+  margin-top: 2rem;
+  float: right;
+}
