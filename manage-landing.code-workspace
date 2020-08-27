@@ -1,0 +1,13 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "..\\..\\Twende-Tours"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "manage-landing-page"
+  }
+}

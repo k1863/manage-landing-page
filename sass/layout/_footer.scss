@@ -1,0 +1,40 @@
+.footer {
+  background-color: $VeryDarkBlue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 30rem;
+  padding: 10rem 10%;
+}
+
+.socials {
+  display: inline-block;
+  margin-top: 6rem;
+}
+
+.social-icon {
+  margin-left: 1rem;
+}
+
+.footer-menu ul li {
+  list-style-type: none;
+  margin-bottom: 1rem;
+  color: $VeryLightGray;
+  font-size: 1.8rem;
+}
+
+.other-links ul li {
+  list-style-type: none;
+  margin-bottom: 1rem;
+  color: $VeryLightGray;
+  font-size: 1.8rem;
+}
+
+.footer-copyright {
+  color: $VeryLightGray;
+  display: block;
+  margin-top: 4rem;
+  float: right;
+  font-size: 1.2rem;
+  opacity: 0.6;
+}

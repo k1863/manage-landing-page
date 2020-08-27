@@ -1,0 +1,60 @@
+.primary__header {
+  font-size: 5.5rem;
+  line-height: 1.4;
+  color: var(--DarkBlue);
+  margin-bottom: 4rem;
+  letter-spacing: -0.1rem;
+  line-height: 1.1;
+}
+
+.primary__header-sub {
+  font-size: 1.8rem;
+  color: var(--DarkGrayishBlue);
+  line-height: 1.5;
+  margin-bottom: 5rem;
+  display: block;
+}
+
+.about-us-main__header {
+  font-size: 4.5rem;
+  line-height: 1;
+  color: $DarkBlue;
+  margin-bottom: 4rem;
+  letter-spacing: -0.1rem;
+}
+
+.about-us-main__sub {
+  font-size: 1.8rem;
+  color: $DarkGrayishBlue;
+  letter-spacing: 0.2px;
+}
+
+.about-us-sub__secondary {
+  color: $DarkBlue;
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 3rem;
+  letter-spacing: 0.2px;
+  font-weight: 700;
+}
+
+.about-us-sub__tertiary {
+  color: $DarkGrayishBlue;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+  display: inline-block;
+}
+
+.stories-section__header {
+  font-size: 4.5rem;
+  color: $DarkBlue;
+  margin-bottom: 10rem;
+  letter-spacing: -0.1rem;
+}
+
+.simplify-header {
+  color: $VeryLightGray;
+  font-size: 4.5rem;
+  line-height: 1.1;
+}

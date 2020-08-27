@@ -1,0 +1,60 @@
+.btn {
+  background-color: $BrightRed;
+  padding: 1.2rem 3rem;
+  outline: none;
+  border: none;
+  border-radius: 3rem;
+  color: $VeryLightGray;
+  text-transform: capitalize;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  box-shadow: 0 0.5rem 1.5rem rgba($VeryDarkBlue, 0.2);
+  cursor: pointer;
+  font-size: 1.6rem;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn:hover {
+  filter: brightness(150%);
+}
+
+.cta__btn {
+  display: inline-block;
+}
+
+.about-us__btn {
+  position: absolute;
+  transform: translateX(-10rem);
+  padding: 1rem 2.5rem;
+  background-color: $BrightRed;
+  outline: none;
+  border: none;
+  border-radius: 3rem;
+  color: $VeryLightGray;
+  text-transform: capitalize;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.testimonial-btn {
+  display: inline-block;
+}
+
+.update-btn {
+  padding: 1rem 2rem;
+  margin-left: 1rem;
+}
+
+.btn-simplify {
+  background-color: $VeryLightGray;
+  color: $DarkBlue;
+}
+
+.btn-simplify:hover {
+  background-color: $BrightRed;
+  color: $VeryLightGray;
+}
