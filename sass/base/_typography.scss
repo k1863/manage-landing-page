@@ -7,6 +7,7 @@
 
   @include respond(tab-land) {
     white-space: nowrap;
+    width: 100%;
   }
 
   @include respond(tab-port) {
@@ -24,14 +25,19 @@
   display: block;
 
   @include respond(tab-land) {
-    width: 50%;
     white-space: nowrap;
+    width: 100%;
   }
 
   @include respond(tab-port) {
     display: flex;
-    justify-content: center;
-    width: 100%;
+    white-space: normal;
+  }
+}
+
+.primary__header-sub br {
+  @include respond(tab-port) {
+    display: none;
   }
 }
 

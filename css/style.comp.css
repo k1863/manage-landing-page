@@ -76,7 +76,8 @@ body {
   line-height: 1.1; }
   @media only screen and (max-width: 75em) {
     .primary__header {
-      white-space: nowrap; } }
+      white-space: nowrap;
+      width: 100%; } }
   @media only screen and (max-width: 56.25em) {
     .primary__header {
       font-size: 4.5rem;
@@ -91,13 +92,16 @@ body {
   display: block; }
   @media only screen and (max-width: 75em) {
     .primary__header-sub {
-      width: 50%;
-      white-space: nowrap; } }
+      white-space: nowrap;
+      width: 100%; } }
   @media only screen and (max-width: 56.25em) {
     .primary__header-sub {
       display: flex;
-      justify-content: center;
-      width: 100%; } }
+      white-space: normal; } }
+
+@media only screen and (max-width: 56.25em) {
+  .primary__header-sub br {
+    display: none; } }
 
 .header__secondary {
   font-size: 4.5rem;
@@ -166,11 +170,11 @@ body {
   border-radius: 3rem;
   color: #fafafa;
   text-transform: capitalize;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.5px;
   box-shadow: 0 0.5rem 1.5rem rgba(29, 30, 37, 0.2);
   cursor: pointer;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   display: inline-block;
   text-decoration: none;
   text-align: center; }
@@ -498,16 +502,20 @@ body {
       align-items: center;
       margin: 6.5rem auto; } }
 
-.cta-section::before {
+.hero-bg-vector {
+  z-index: -1;
   position: absolute;
-  content: "";
-  background: url("/images/pale-red-background.svg") no-repeat;
-  background-position: 20rem 45rem;
-  background-size: 100%;
-  width: 100%;
-  height: 100%;
-  right: 0;
-  z-index: -1; }
+  top: -100%;
+  right: -35%;
+  width: 80%;
+  overflow-x: hidden; }
+  @media only screen and (max-width: 56.25em) {
+    .hero-bg-vector {
+      display: none; } }
+
+@media only screen and (max-width: 56.25em) {
+  .hero-bg {
+    position: absolute; } }
 
 .cta-graphs-box {
   position: relative; }
@@ -544,6 +552,16 @@ body {
       align-items: center;
       width: auto;
       margin: 8rem auto; } }
+
+@media only screen and (max-width: 75em) {
+  .about-us__item {
+    width: 80%;
+    transform: translateX(6rem); } }
+
+@media only screen and (max-width: 56.25em) {
+  .about-us__item {
+    width: 100%;
+    transform: translateX(0); } }
 
 .about-us__bg-img {
   position: absolute;

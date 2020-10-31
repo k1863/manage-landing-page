@@ -15,18 +15,24 @@
   }
 }
 
-.cta-section::before {
-  position: absolute;
-  content: "";
-  background: url("/images/pale-red-background.svg") no-repeat;
-  background-position: 20rem 45rem;
-  background-size: 100%;
-  width: 100%;
-  height: 100%;
-  right: 0;
+.hero-bg-vector {
   z-index: -1;
+  position: absolute;
+  top: -100%;
+  right: -35%;
+  width: 80%;
+  overflow-x: hidden;
+
+  @include respond(tab-port) {
+    display: none;
+  }
 }
 
+.hero-bg {
+  @include respond(tab-port) {
+    position: absolute;
+  }
+}
 .cta-graphs-box {
   position: relative;
 }
@@ -69,7 +75,17 @@
     margin: 8rem auto;
   }
 }
+.about-us__item {
+  @include respond(tab-land) {
+    width: 80%;
+    transform: translateX(6rem);
+  }
 
+  @include respond(tab-port) {
+    width: 100%;
+    transform: translateX(0);
+  }
+}
 .about-us__bg-img {
   position: absolute;
   top: 60%;
