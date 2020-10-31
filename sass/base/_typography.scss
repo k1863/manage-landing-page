@@ -1,28 +1,51 @@
 .primary__header {
   font-size: 5.5rem;
-  line-height: 1.4;
   color: var(--DarkBlue);
   margin-bottom: 4rem;
   letter-spacing: -0.1rem;
   line-height: 1.1;
+
+  @include respond(tab-land) {
+    white-space: nowrap;
+  }
+
+  @include respond(tab-port) {
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
 }
 
 .primary__header-sub {
   font-size: 1.8rem;
-  color: var(--DarkGrayishBlue);
+  color: $DarkGrayishBlue;
   line-height: 1.5;
   margin-bottom: 5rem;
   display: block;
+
+  @include respond(tab-port) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
-.about-us-main__header {
+.header__secondary {
   font-size: 4.5rem;
   line-height: 1;
   color: $DarkBlue;
   margin-bottom: 4rem;
   letter-spacing: -0.1rem;
+
+  @include respond(tab-port) {
+    text-align: center;
+  }
 }
 
+.header__tertiary {
+  font-size: 1.8rem;
+  color: $DarkGrayishBlue;
+  letter-spacing: 0.2px;
+}
 .about-us-main__sub {
   font-size: 1.8rem;
   color: $DarkGrayishBlue;
@@ -33,9 +56,16 @@
   color: $DarkBlue;
   font-size: 1.8rem;
   display: block;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   letter-spacing: 0.2px;
   font-weight: 700;
+  width: 60%;
+
+  @include respond(tab-port) {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    width: 100%;
+  }
 }
 
 .about-us-sub__tertiary {
@@ -51,10 +81,19 @@
   color: $DarkBlue;
   margin-bottom: 10rem;
   letter-spacing: -0.1rem;
+
+  @include respond(tab-port) {
+    margin-bottom: 5rem;
+  }
 }
 
 .simplify-header {
   color: $VeryLightGray;
   font-size: 4.5rem;
   line-height: 1.1;
+
+  @include respond(tab-port) {
+    margin: 3rem 0;
+    font-size: 4rem;
+  }
 }

@@ -8,16 +8,18 @@ $(document).ready(function () {
     adaptiveHeight: false,
     autoplay: true,
     infinite: true,
+    variableWidth: false,
+    pauseOnHover: true,
     slide: "div.stories-section-card",
     responsive: [
       {
-        breakpoint: 800,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
           dots: true,
           autoplay: true,
-          centerMode: false,
+          centerMode: true,
           variableWidth: false,
         },
       },

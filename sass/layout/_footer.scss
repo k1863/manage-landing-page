@@ -5,17 +5,36 @@
   justify-content: space-between;
   height: 30rem;
   padding: 10rem 10%;
+
+  @include respond(tab-port) {
+    padding: 0;
+    flex-direction: column-reverse;
+    height: 45rem;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .socials {
   display: inline-block;
   margin-top: 6rem;
+
+  @include respond(tab-port) {
+    margin-top: 2rem;
+  }
 }
 
 .social-icon {
   margin-left: 1rem;
 }
 
+.footer-menu {
+  @include respond(tab-port) {
+    position: absolute;
+    left: 10rem;
+    margin-top: -2rem;
+  }
+}
 .footer-menu ul li {
   list-style-type: none;
   margin-bottom: 1rem;
@@ -23,6 +42,13 @@
   font-size: 1.8rem;
 }
 
+.other-links {
+  @include respond(tab-port) {
+    position: absolute;
+    right: 10rem;
+    margin-top: -2rem;
+  }
+}
 .other-links ul li {
   list-style-type: none;
   margin-bottom: 1rem;
@@ -30,6 +56,11 @@
   font-size: 1.8rem;
 }
 
+.updates-form {
+  @include respond(tab-port) {
+    margin-bottom: 25rem;
+  }
+}
 .footer-copyright {
   color: $VeryLightGray;
   display: block;
@@ -37,4 +68,8 @@
   float: right;
   font-size: 1.2rem;
   opacity: 0.6;
+
+  @include respond(tab-port) {
+    display: none;
+  }
 }

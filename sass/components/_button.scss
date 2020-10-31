@@ -10,7 +10,7 @@
   letter-spacing: 0.5px;
   box-shadow: 0 0.5rem 1.5rem rgba($VeryDarkBlue, 0.2);
   cursor: pointer;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   display: inline-block;
   text-decoration: none;
   text-align: center;
@@ -22,22 +22,20 @@
 
 .cta__btn {
   display: inline-block;
+
+  @include respond(tab-port) {
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .about-us__btn {
-  position: absolute;
-  transform: translateX(-10rem);
-  padding: 1rem 2.5rem;
-  background-color: $BrightRed;
-  outline: none;
-  border: none;
+  padding: 0.6rem 3rem;
   border-radius: 3rem;
   color: $VeryLightGray;
-  text-transform: capitalize;
-  font-weight: 700;
   letter-spacing: 1px;
-  font-size: 1.8rem;
-  cursor: pointer;
+  box-shadow: none;
 }
 
 .testimonial-btn {

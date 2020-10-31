@@ -5,6 +5,26 @@
   justify-content: space-between;
   position: relative;
   margin: 10rem auto;
+
+  @include respond(tab-port) {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 6.5rem auto;
+  }
+}
+
+.cta-section::before {
+  position: absolute;
+  content: "";
+  background: url("/images/pale-red-background.svg") no-repeat;
+  background-position: 20rem 45rem;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  z-index: -1;
 }
 
 .cta-graphs-box {
@@ -14,6 +34,11 @@
 .cta-graphs__img {
   width: 100%;
   z-index: 100;
+
+  @include respond(tab-port) {
+    margin-top: 0rem;
+    margin-bottom: 5rem;
+  }
 }
 
 .cta-graphs__bg-img {
@@ -22,6 +47,10 @@
   position: absolute;
   top: -43rem;
   right: -35rem;
+
+  @include respond(phone) {
+    width: auto;
+  }
 }
 
 .about-us-section {
@@ -31,6 +60,14 @@
   width: 80%;
   margin: 10rem auto;
   position: relative;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin: 8rem auto;
+  }
 }
 
 .about-us__bg-img {
@@ -39,11 +76,27 @@
   left: -65%;
   z-index: -1;
   width: 80%;
+
+  @include respond(phone) {
+    display: none;
+  }
+}
+
+.about-us__item-header {
+  @include respond(tab-port) {
+    display: flex;
+    margin-bottom: 2rem;
+    background-color: rgba(242, 95, 58, 0.1);
+  }
 }
 .stories-section {
   width: 100%;
   margin-top: 10rem 0;
   text-align: center;
+
+  @include respond(tab-port) {
+    margin-top: 5rem 0;
+  }
 }
 
 .simplify-section {
@@ -53,7 +106,16 @@
   align-items: center;
   margin-top: 15rem;
   padding: 0 10%;
-  height: 30rem;
+  height: 40rem;
   background: url("/images/bg-simplify-section-desktop.svg"), no-repeat,
     $BrightRed;
+
+  @include respond(tab-port) {
+    margin-top: 10rem;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 }

@@ -14,19 +14,55 @@
   </head>
   <body>
     <div class="navigation-wrapper">
-      <div class="navigation__logo-box">
-        <img class="navigation__logo" src="/images/logo.svg" alt="manage-logo" />
+      <div class="navigation-logo-box">
+        <img class="navigation-logo" src="/images/logo.svg" alt="manage-logo" />
       </div>
-      <ul class="navigation__menu-items">
+      <ul class="navigation-menu-items">
         <li>Pricing</li>
         <li>Product</li>
         <li>About Us</li>
         <li>Careers</li>
         <li>Community</li>
       </ul>
-      <a class="btn navigation__button">Get started</a>
+      <div class="nav-button-box">
+   <a class="btn">Get started</a>
+      </div>
+   
     </div>
-
+  <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__label">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>01</span> Pricing</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>02</span>Product</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>03</span>About Us</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>04</span>Careers</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#popup" class="navigation__link"
+              ><span>05</span>Community</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="cta-section">
       <div call-to-action-text-box>
         <h1 class="primary__header">
@@ -34,34 +70,32 @@
           better products.
         </h1>
         <span class="primary__header-sub"
-          >Manage makes it simple for software teams <br />to plan day-to-day
-          tasks while keeping the <br />larger team goals in view.</span
+          >Manage makes it simple for software teams<br> to plan day-to-day
+          tasks while keeping the<br> larger team goals in view.</span
         >
         <a class="btn cta__btn">Get started</a>
       </div>
-      <div class="cta-graphs-box">
+    
+      <div class="cta-graphs-box"
+      >
         <img
           class="cta-graphs__img"
           src="/images/illustration-intro.svg"
           alt="cta-graph"
         />
-        <img
-          src="images/pale-red-background.svg"
-          alt="cta-bg-img"
-          class="cta-graphs__bg-img"
-        />
       </div>
+
     </div>
 
     <div class="about-us-section">
       <div class="about-us-main">
-        <h1 class="about-us-main__header">
-          What’s different about<br />
+        <h1 class="header__secondary">
+          What’s different about
           Manage?
         </h1>
-        <span class="about-us-main__sub">
-          Manage provides all the functionality your<br />team needs, without
-          the complexity. Our<br />software is tailor-made for modern digital<br />
+        <span class="primary__header-sub">
+          Manage provides all the functionality your team needs, without
+          the complexity. Our software is tailor-made for modern digital 
           product teams.
         </span>
 
@@ -74,41 +108,45 @@
         </div>
       </div>
       <div class="about-us-sub">
-        <div>
-          <button class="about-us__btn">01</button>
-          <div>
+        <div class="about-us__item">
+          <div class="about-us__item-header">
+             <button class="btn about-us__btn">01</button>
             <h1 class="about-us-sub__secondary">Track company-wide progress</h1>
-            <span class="about-us-sub__tertiary">
-              See how your day-to-day tasks fit into the wider vision.<br />
-              Go from tracking progress at the milestone level all the<br />
-              way done to the smallest of details. Never lose sight of<br />
+            </div>
+            <span class="primary__header-sub">
+              See how your day-to-day tasks fit into the wider vision.
+              Go from tracking progress at the milestone level all the
+              way done to the smallest of details. Never lose sight of
               the bigger picture again.
             </span>
-          </div>
+          
         </div>
-        <div>
-          <button class="about-us__btn">02</button>
-          <div>
+        <div class="about-us__item">
+          <div class="about-us__item-header">
+             <button class="btn about-us__btn">02</button>
             <h1 class="about-us-sub__secondary">Advanced built-in reports</h1>
+              </div>
             <span class="about-us-sub__tertiary">
-              Set internal delivery estimates and track progress toward<br />company
-              goals. Our customisable dashboard helps you<br />
-              build out the reports you need to keep key stakeholders<br />
+              Set internal delivery estimates and track progress toward company
+              goals. Our customisable dashboard helps you
+              build out the reports you need to keep key stakeholders
               informed.
             </span>
-          </div>
+        
         </div>
-        <div>
-          <button class="about-us__btn">03</button>
-          <div>
+        <div class="about-us__item">
+        
+          <div class="about-us__item-header">
+              <button class="btn about-us__btn">03</button>
             <h1 class="about-us-sub__secondary">Everything you need in one place</h1>
+            </div>
             <span class="about-us-sub__tertiary">
               Stop jumping from one service to another to<br />
               communicate, store files, track tasks and share<br />
               documents. Manage offers an all-in-one team<br />
               productivity solution.
             </span>
-          </div>
+          
         </div>
       </div>
     </div>
@@ -116,7 +154,6 @@
     <div class="stories-section">
       <h2 class="stories-section__header">What they've said</h2>
       <div class="stories-slider">
-
         <div class="stories-section-card">
           <div class="story--img-box">
             <img
@@ -185,7 +222,7 @@
     </div>
     <div class="simplify-section">
       <h1 class="simplify-header">
-        Simplify how your team<br />works today. Get Started
+        Simplify how your team works today. Get Started
       </h1>
       <button class="btn btn-simplify">Get Started</button>
     </div>

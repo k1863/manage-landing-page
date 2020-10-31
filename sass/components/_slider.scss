@@ -4,14 +4,25 @@
   height: 100%;
   outline: none;
   margin: 5rem auto;
+
+  @include respond(tab-port) {
+    width: 100%;
+  }
+}
+.slick-dots {
+  @include respond(tab-port) {
+    bottom: -10px;
+    color: $BrightRed;
+  }
 }
 
+.slick-dots li button:before {
+  color: $BrightRed;
+}
 .stories-section-card {
   background-color: $VeryLightGray;
   padding: 4rem 3rem;
   height: 25rem;
-  overflow: visible;
-
   &:not(:last-child) {
     margin-right: 2rem;
   }
@@ -24,6 +35,10 @@
   margin-right: auto;
   overflow: visible;
   box-sizing: border-box;
+
+  @include respond(tab-port) {
+    margin-top: 0;
+  }
 }
 
 .client-name {
