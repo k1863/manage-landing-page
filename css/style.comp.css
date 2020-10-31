@@ -156,11 +156,16 @@ body {
 .simplify-header {
   color: #fafafa;
   font-size: 4.5rem;
-  line-height: 1.1; }
+  line-height: 1.4;
+  padding: 0 2rem; }
   @media only screen and (max-width: 56.25em) {
     .simplify-header {
       margin: 3rem 0;
       font-size: 4rem; } }
+
+@media only screen and (max-width: 75em) {
+  .simplify-header br {
+    display: none; } }
 
 .btn {
   background-color: #f25f3a;
@@ -210,11 +215,10 @@ body {
 
 .btn-simplify {
   background-color: #fafafa;
-  color: #242d52; }
+  color: #f25f3a; }
 
 .btn-simplify:hover {
-  background-color: #f25f3a;
-  color: #fafafa; }
+  background-color: #ffefeb; }
 
 .update-input {
   color: #9095a7;
@@ -600,7 +604,7 @@ body {
   background: url("/images/bg-simplify-section-desktop.svg"), no-repeat, #f25f3a; }
   @media only screen and (max-width: 56.25em) {
     .simplify-section {
-      margin-top: 10rem;
+      margin-top: 5rem;
       padding: 0;
       flex-direction: column;
       align-items: center;

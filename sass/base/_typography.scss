@@ -102,10 +102,17 @@
 .simplify-header {
   color: $VeryLightGray;
   font-size: 4.5rem;
-  line-height: 1.1;
+  line-height: 1.4;
+  padding: 0 2rem;
 
   @include respond(tab-port) {
     margin: 3rem 0;
     font-size: 4rem;
+  }
+}
+
+.simplify-header br {
+  @include respond(tab-land) {
+    display: none;
   }
 }
