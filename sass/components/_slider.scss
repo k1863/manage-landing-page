@@ -35,10 +35,6 @@
   margin-right: auto;
   overflow: visible;
   box-sizing: border-box;
-
-  @include respond(tab-port) {
-    margin-top: 0;
-  }
 }
 
 .client-name {

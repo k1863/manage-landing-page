@@ -89,10 +89,15 @@ body {
   line-height: 1.5;
   margin-bottom: 5rem;
   display: block; }
+  @media only screen and (max-width: 75em) {
+    .primary__header-sub {
+      width: 50%;
+      white-space: nowrap; } }
   @media only screen and (max-width: 56.25em) {
     .primary__header-sub {
       display: flex;
-      justify-content: center; } }
+      justify-content: center;
+      width: 100%; } }
 
 .header__secondary {
   font-size: 4.5rem;
@@ -121,10 +126,10 @@ body {
   margin-bottom: 2rem;
   letter-spacing: 0.2px;
   font-weight: 700;
-  width: 60%; }
+  margin-left: -8rem; }
   @media only screen and (max-width: 56.25em) {
     .about-us-sub__secondary {
-      margin-left: 2rem;
+      margin-left: 4rem;
       margin-top: 1rem;
       width: 100%; } }
 
@@ -186,7 +191,11 @@ body {
   border-radius: 3rem;
   color: #fafafa;
   letter-spacing: 1px;
-  box-shadow: none; }
+  box-shadow: none;
+  transform: translateX(-10rem); }
+  @media only screen and (max-width: 56.25em) {
+    .about-us__btn {
+      transform: translateX(3rem); } }
 
 .testimonial-btn {
   display: inline-block; }
@@ -243,9 +252,6 @@ body {
   margin-right: auto;
   overflow: visible;
   box-sizing: border-box; }
-  @media only screen and (max-width: 56.25em) {
-    .client-img {
-      margin-top: 0; } }
 
 .client-name {
   margin: 1rem 0;
@@ -549,16 +555,18 @@ body {
     .about-us__bg-img {
       display: none; } }
 
-@media only screen and (max-width: 56.25em) {
-  .about-us__item-header {
-    display: flex;
-    margin-bottom: 2rem;
-    background-color: rgba(242, 95, 58, 0.1); } }
+.about-us__item-header {
+  display: flex;
+  margin-bottom: 2rem; }
+  @media only screen and (max-width: 56.25em) {
+    .about-us__item-header {
+      background-color: rgba(242, 95, 58, 0.1); } }
 
 .stories-section {
   width: 100%;
   margin-top: 10rem 0;
-  text-align: center; }
+  text-align: center;
+  overflow-x: hidden; }
   @media only screen and (max-width: 56.25em) {
     .stories-section {
       margin-top: 5rem 0; } }
@@ -570,7 +578,7 @@ body {
   align-items: center;
   margin-top: 15rem;
   padding: 0 10%;
-  height: 40rem;
+  height: 30rem;
   background: url("/images/bg-simplify-section-desktop.svg"), no-repeat, #f25f3a; }
   @media only screen and (max-width: 56.25em) {
     .simplify-section {
@@ -579,4 +587,5 @@ body {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      text-align: center; } }
+      text-align: center;
+      height: 40rem; } }

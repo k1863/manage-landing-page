@@ -36,6 +36,11 @@
   color: $VeryLightGray;
   letter-spacing: 1px;
   box-shadow: none;
+  transform: translateX(-10rem);
+
+  @include respond(tab-port) {
+    transform: translateX(3rem);
+  }
 }
 
 .testimonial-btn {
